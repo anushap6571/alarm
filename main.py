@@ -3,9 +3,10 @@ import subprocess
 
 
 def main():
-    time_w_colon = input("Enter the time: ")
-
+    time_w_colon = input("Enter the alarm time (HH:MM): ")
+    
     times = time_w_colon.split(":")
+
     target_hour = int(times[0])
     target_minute = int(times[1])
 
